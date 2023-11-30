@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 def print_last_digit(number):
-    last_digit = number % 10
-    print(last_digit)
-    return last_digit
+    try:
+        last_digit = abs(int(number)) % 10
+        print(f"{last_digit:02d}")
+        return last_digit
+    except ValueError:
+        print("Invalid input: not a number")
 
 # Example usage:
-print_last_digit(12345)
+result = print_last_digit("Holberton")
+print(result)
 
