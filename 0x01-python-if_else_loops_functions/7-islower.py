@@ -6,9 +6,6 @@ def islower(c):
     elif isinstance(c, str) and len(c) == 1 and 'A' <= c <= 'Z':
         return f"{c} => upper"
     else:
-        raise ValueError("Invalid input")
+        return "Invalid input"
 
-# Example usage:
-character = 'a'
-result = islower(character)
-print(result)  # This should print 'a => lower'
+
