@@ -6,3 +6,7 @@ def uppercase(s):
         result += chr(ord(char) - (ord('a') - ord('A'))) if 'a' <= char <= 'z' else char
 
     print("{}".format(result))
+
+
+# Example usage:
+uppercase("hello")
