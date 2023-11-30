@@ -7,7 +7,7 @@ def fizzbuzz():
         elif i % 5 == 0:
             print("Buzz", end=" ")
         else:
-            print(i, end="\n")
+            print(i, end="\n ")
 
 # Call the function to print the FizzBuzz sequence
-fizzbuzz()i
+fizzbuzz()
