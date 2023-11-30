@@ -1,32 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#!/usr/bin/python3
+import random
 
-/**
- * main - Prints a text according number
- *
- * Return: Always (Success)
- */
-int main(void)
-{
-	int n, lastd;
+number = random.randint(-10000, 10000)
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	lastd = n % 10;
+# Extract the last digit of the number
+last_digit = abs(number) % 10
 
-	if (lastd > 5)
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
-	}
-	else if (lastd == 0)
-	{
-		printf("Last digit of %d is %d and is 0\n", n, lastd);
-	}
-	else if (lastd < 6 && lastd != 0)
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
-	}
+# Print the required message based on the conditions
+print(f"The string Last digit of {number} is {last_digit}", end=' ')
 
-	return (0);
-}
+if last_digit > 5:
+    print("and is greater than 5")
+elif last_digit == 0:
+    print("and is 0")
+else:
+    print(f"and is less than 6 and not 0")
