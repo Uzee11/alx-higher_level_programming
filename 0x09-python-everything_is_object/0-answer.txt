@@ -1,3 +1,1 @@
-#!/usr/bin/python3
-
-type
+#!/usr/bin/python3\n\ntype\n
