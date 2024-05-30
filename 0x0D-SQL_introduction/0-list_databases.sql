@@ -1,7 +1,2 @@
-Enter password: 
-Database                                                                                     
-hbtn_0c_0                                                                                    
-information_schema                                                                           
-mysql                                                                                        
-performance_schema                                                                           
-sys        
+-- This script list all databases in MySQL server
+SHOW DATABASES;
